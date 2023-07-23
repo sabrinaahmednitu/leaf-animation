@@ -8,7 +8,7 @@
 body{
     background-color: white;
     min-height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header{
@@ -18,7 +18,7 @@ header{
     width: 100%;
     padding: 30px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     z-index: 100;
 }
@@ -27,6 +27,7 @@ header{
   color: #359381;
   font-size: 2em;
   pointer-events:none ;
+  margin-right: 140px;
 }
 .navigation a{
   text-decoration: none;
@@ -38,6 +39,45 @@ header{
 }
 .navigation a:hover , .navigation a.activated{
   background-color: #359381;
-  color: white;
-  
+  color: white; 
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    z-index: 3;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+ position: relative;
+ background-color: #003329;
+ padding: 100px;
+}
+.sec h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+}
+.sec p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    line-height: 25px;
 }
